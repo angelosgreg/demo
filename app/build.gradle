@@ -54,3 +54,8 @@ sourceSets {
         }
     }
 }
+compileJava {
+    options.incremental = true
+    options.fork = true
+    options.failOnError = false
+}
